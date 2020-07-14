@@ -6,7 +6,7 @@
   "scripts": {
     "start": "run-p start-inner start-outer",
     "start-inner": "http-server -p 3000 -c-1 main-site",
-    "start-outer": "http-server -p 3001 -c-1 outer-site"
+    "start-outer": "http-server -p 3001 -c-1 outer-site --cors"
 
   },
   "author": "",
