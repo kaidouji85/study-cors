@@ -6,13 +6,17 @@
   "scripts": {
     "start": "run-p start-inner start-outer",
     "start-inner": "http-server -p 3000 -c-1 main-site",
-    "start-outer": "http-server -p 3001 -c-1 outer-site --cors"
-
+    "start-outer": "node outer-site/app.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "http-server": "^0.12.3",
     "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nocache": "^2.1.0"
   }
 }
