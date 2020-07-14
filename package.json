@@ -1,0 +1,18 @@
+{
+  "name": "study-cors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p start-inner start-outer",
+    "start-inner": "http-server -p 3000 -c-1 main-site",
+    "start-outer": "http-server -p 3001 -c-1 outer-site"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "npm-run-all": "^4.1.5"
+  }
+}
